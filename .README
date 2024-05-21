@@ -1,0 +1,44 @@
+Shop Store Project
+This is a Spring Boot project for managing a shop store with JWT authentication and an H2 in-memory database.
+
+Features
+User authentication using JWT (JSON Web Tokens)
+CRUD operations for managing products
+Role-based access control (RBAC) for managing user permissions
+H2 in-memory database for storing user and product data
+Technologies Used
+Java
+Spring Boot
+Spring Security
+Spring Data JPA
+H2 Database
+JSON Web Tokens (JWT)
+Maven
+Setup
+Clone the repository:
+bash
+Copy code
+git clone <repository-url>
+Navigate to the project directory:
+bash
+Copy code
+cd shop-store
+Build the project using Maven:
+go
+Copy code
+mvn clean package
+Run the application:
+bash
+Copy code
+java -jar target/shop-store-1.0-SNAPSHOT.jar
+Access the application in your web browser at http://localhost:8080
+API Endpoints
+/api/auth/signup: Register a new user
+/api/auth/signin: Authenticate user and generate JWT token
+/api/products: Get all products (GET), Create new product (POST)
+/api/products/{id}: Get product by ID (GET), Update product by ID (PUT), Delete product by ID (DELETE)
+Configuration
+JWT Secret Key: You can configure the JWT secret key and expiration time in the application.properties file.
+Database Configuration: The project is configured to use an H2 in-memory database by default. You can modify the database configuration in the application.properties file if needed.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
